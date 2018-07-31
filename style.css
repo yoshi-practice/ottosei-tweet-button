@@ -1,9 +1,14 @@
 body {
-    font-family: serif;
-    margin: auto;
+    background-image: url(sea.jpg);
+    background-size: cover;
 }
 
-
+html,
+body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden
+}
 
 #object {
     visibility: hidden;
@@ -13,7 +18,7 @@ body {
     opacity: 0.1;
 }
 
-.c-button {
+.tweet-button {
     width: 200px;
     height: 45px;
     /* font-family: 'Roboto', sans-serif;*/
@@ -24,15 +29,93 @@ body {
     color: #000;
     background-color: skyblue;
     border: none;
-    border-radius: 45px;
+    /*  border-radius: 45px;*/
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease 0s;
     cursor: pointer;
     outline: none;
 }
 
-.c-button:hover {
+.tweet-button:hover {
     background-color: deepskyblue;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+
+}
+
+.ottoseifollow-button {
+    width: 200px;
+    height: 45px;
+    /* font-family: 'Roboto', sans-serif;*/
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: coral;
+    border: none;
+    /*  border-radius: 45px;*/
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.ottoseifollow-button:hover {
+    background-color: red;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+
+}
+
+.devfollow-button {
+    width: 200px;
+    height: 45px;
+    /* font-family: 'Roboto', sans-serif;*/
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: lightgreen;
+    border: none;
+    /*  border-radius: 45px;*/
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.devfollow-button:hover {
+    background-color: darkseagreen;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+
+}
+
+.ottoseisearch-button {
+    width: 200px;
+    height: 45px;
+    /* font-family: 'Roboto', sans-serif;*/
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: darkgray;
+    border: none;
+    /*  border-radius: 45px;*/
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.ottoseisearch-button:hover {
+    background-color: gray;
     box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
     color: #fff;
     transform: translateY(-7px);
@@ -41,4 +124,24 @@ body {
 
 footer {
     text-align: center;
+}
+
+.h4 {
+    color: white;
+}
+
+@media screen and (max-width:503px) {
+    .break:before {
+        content: "\A";
+        white-space: pre;
+
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }

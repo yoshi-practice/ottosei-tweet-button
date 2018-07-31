@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="オットセイしたいときに押すボタン。">
-    <meta property="og:url" content="https://nya-n-btn.github.io" />
+    <meta property="og:url" content="https://yoshi1125hisa.github.io/OttoseiButton/" />
     <meta property="og:title" content="オットセイしたいときに押すボタン。" />
     <meta property="og:description" content="オットセイしたいときに押すボタン。" />
     <meta property="og:image" content="" />
@@ -23,6 +23,7 @@
     <link rel="icon" type="image/png" href="ottosei.png">
     <link rel="stylesheet" type="text/css" href="style.css">
 
+
     <title>オットセイしたいときに押すボタン。</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
@@ -32,37 +33,27 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
-
-    <script>
-        $(window).scroll(function() {
-            $('#object').each(function() {
-                var imagePos = $(this).offset().top;
-
-                var topOfWindow = $(window).scrollTop();
-                if (imagePos < topOfWindow + 1) {
-                    $(this).addClass("pulse");
-                }
-            });
-        });
-    </script>
+    <script type="text/javascript" src="script.js"></script>
 
 </head>
 
 <body>
-    <div class="container">
-        <div class="text-center m-5">
-            <h5>オットセイしたいときに押すボタン。</h5>
 
-            <button onclick="window.open('https://twitter.com/intent/tweet?url=https://nya-n-btn.github.io&text=オットセイの真似します')" type="button" id="object" class="slideUp pulse c-button m-3">ＴＬが静かなので<img src="ottosei.png" width="20"></button>
-        </div>
-        <footer>
-            ©️copyright 2018
-            <!--img src="2001.png" width="40" height="40"-->
-            <a href="" target="_blank">yoshi1125hisa</a> .
-        </footer>
+    <div class="text-center m-5">
+        <h4 style="color: white;">オットセイしたいときに<span class="break"></span>押すボタン。</h4>
 
+        <button onclick="window.open('https://twitter.com/intent/tweet?url=https://yoshi1125hisa.github.io/OttoseiButton/&text=TLが静かなのでオットセイの真似します おうおうおうおうおうおうwwwwwwww パァンパァン(尻を叩く音)おうおおうおうおうおうおうおうｗｗｗｗｗパァンッパァンッ(ヒレを叩く音) おうおうおうおうおうおうwwww')" type="button" id="object" class="slideUp pulse tweet-button m-3">TLが静かなので <img src="ottosei.png" width="20"></button><br>
+        <button onclick="window.open('https://twitter.com/fur_seal_bot')" type="button" id="object" class="slideUp pulse ottoseifollow-button m-3">オットセイをフォロー <img src="ottosei.png" width="20"></button>
+        <br><button onclick="window.open('https://twitter.com/search?f=tweets&q=%23%E3%82%AA%E3%83%83%E3%83%88%E3%82%BB%E3%82%A4%E3%83%9C%E3%82%BF%E3%83%B3&src=typd')" type="button" id="object" class="slideUp pulse ottoseisearch-button m-3">#オットセイボタン <img src="ottosei.png" width="20"></button>
+        <div class="push"></div>
+    </div><br>
+    <footer style="color: white;">
+        ©️Copyright 2018
+        <!--img src="2001.png" width="40" height="40"-->
+        <a href="" target="_blank">yoshi1125hisa</a> .<br>
+        <button onclick="window.open('https://twitter.com/yoshi1125hisa')" type="button" id="object" class="slideUp pulse devfollow-button m-3">開発者をフォロー <img src="ottosei.png" width="20"></button>
+    </footer>
 
-    </div>
 
 </body>
 
