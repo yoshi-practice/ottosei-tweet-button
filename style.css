@@ -141,6 +141,14 @@ footer {
     }
 }
 
+@media screen and (max-width:503px) {
+    .break:before {
+        content: "\A";
+        white-space: pre;
+
+    }
+}
+
 a {
     text-decoration: none;
 }
